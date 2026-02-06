@@ -50,17 +50,35 @@
   </div>
 
 <script>
-    const BASE = "/InnovateTranslations";
-  const lang = (navigator.language || '').toLowerCase();
-  const target =
-    lang.startsWith('ru') ? `${BASE}/ru/` :
-    lang.startsWith('en') ? `${BASE}/en/` :
-    `${BASE}/pl/`;
+  const BASE = "/InnovateTranslations";
+  const y = document.getElementById('y');
+  if (y) y.textContent = new Date().getFullYear();
 
-  // przekieruj po chwili (żeby dać szansę kliknąć)
-  setTimeout(()=> { window.location.href = target; }, 7000);
+  // jeśli język już zapisany – omiń landing
+  const saved = localStorage.getItem("it_lang");
+  if (saved === "pl" || saved === "en" || saved === "ru") {
+    window.location.replace(`${BASE}/${saved}/`);
+  } else {
+    const lang = (navigator.language || '').toLowerCase();
+    const target =
+      lang.startsWith('ru') ? `${BASE}/ru/` :
+      lang.startsWith('en') ? `${BASE}/en/` :
+      `${BASE}/pl/`;
 
-  document.getElementById('y').textContent = new Date().getFullYear();
+    // długi, spokojny timeout – landing ma sens
+    setTimeout(() => {
+      window.location.href = target;
+    }, 90000); // 90 sekund
+  }
+
+  // zapamiętaj kliknięcie języka
+  document.querySelectorAll('a[href*="/InnovateTranslations/"]').forEach(a => {
+    a.addEventListener("click", () => {
+      if (a.href.includes("/pl/")) localStorage.setItem("it_lang","pl");
+      if (a.href.includes("/en/")) localStorage.setItem("it_lang","en");
+      if (a.href.includes("/ru/")) localStorage.setItem("it_lang","ru");
+    });
+  });
 </script>
 </body>
 </html>
