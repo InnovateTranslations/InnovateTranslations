@@ -43,15 +43,14 @@
   </div>
 
 <script>
-  // proste dopasowanie języka — bez ciasteczek
+    const BASE = "/InnovateTranslations";
   const lang = (navigator.language || '').toLowerCase();
   const target =
-    lang.startsWith('ru') ? '/ru/' :
-    lang.startsWith('en') ? '/en/' :
-    '/pl/';
+    lang.startsWith('ru') ? `${BASE}/ru/` :
+    lang.startsWith('en') ? `${BASE}/en/` :
+    `${BASE}/pl/`;
 
-  // nie przekierowuj jeśli użytkownik już kliknął link
-  // (tu: zawsze przekierujemy po 700ms, żeby dać szansę kliknąć)
+  // przekieruj po chwili (żeby dać szansę kliknąć)
   setTimeout(()=> { window.location.href = target; }, 700);
 
   document.getElementById('y').textContent = new Date().getFullYear();
