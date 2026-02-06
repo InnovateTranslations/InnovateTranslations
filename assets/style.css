@@ -49,10 +49,10 @@ a{color:inherit}
   text-align: left;     /* KLUCZ: lewa krawędź */
 }
 
-/* Przycisków nie centrujemy */
+/* Przycisków nie centrujemy 
 .hero-inner .cta{
   justify-content: flex-start;  /* zamiast center */
-}
+} */
 
 /* Opcjonalnie: żeby przyciski ładnie “siadały” pod tekstem */
 .hero-inner .cta .btn{
@@ -130,9 +130,12 @@ a{color:inherit}
 }
 
 /* Landing – przyciski wyrównane do lewej krawędzi */
+/* Landing: przyciski mają wyrównywać się do lewej krawędzi bloku */
 .hero-inner .cta{
+  width: 100%;
   justify-content: flex-start !important;
 }
+
 .hero-inner .cta .btn:first-child{
   margin-left: 0;
 }
