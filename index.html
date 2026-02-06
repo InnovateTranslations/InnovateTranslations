@@ -1,1 +1,59 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InnovateTranslations — tłumaczenia PL/EN/RU</title>
+  <meta name="description" content="InnovateTranslations — profesjonalne usługi tłumaczeniowe (PL/EN/RU). Szybka wycena, komunikacja e-mail, terminowość." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://innovatetranslations.github.io/" />
+  <meta property="og:title" content="InnovateTranslations — usługi tłumaczeniowe" />
+  <meta property="og:description" content="Tłumaczenia PL/EN/RU dla firm. Szybka wycena i terminowa realizacja." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">InnovateTranslations</div>
+      <div class="lang">
+        <a href="/pl/" aria-label="Polski">PL</a>
+        <a href="/en/" aria-label="English">EN</a>
+        <a href="/ru/" aria-label="Русский">RU</a>
+      </div>
+    </div>
+
+    <section class="hero">
+      <h1>Wybierz język</h1>
+      <p>Ta strona jest dostępna w 3 wersjach językowych. Za chwilę spróbuję dobrać wersję na podstawie ustawień przeglądarki — ale zawsze możesz przełączyć ręcznie.</p>
+      <div class="cta">
+        <a class="btn" href="/pl/">Polski</a>
+        <a class="btn secondary" href="/en/">English</a>
+        <a class="btn secondary" href="/ru/">Русский</a>
+      </div>
+      <p class="small" style="margin-top:14px">Jeśli wolisz bez automatycznego wyboru, usuń skrypt na dole pliku.</p>
+    </section>
+
+    <div class="footer">
+      <div>© <span id="y"></span> InnovateTranslations</div>
+      <div class="small">Kontakt i oferta w wybranej wersji językowej.</div>
+    </div>
+  </div>
+
+<script>
+  // proste dopasowanie języka — bez ciasteczek
+  const lang = (navigator.language || '').toLowerCase();
+  const target =
+    lang.startsWith('ru') ? '/ru/' :
+    lang.startsWith('en') ? '/en/' :
+    '/pl/';
+
+  // nie przekierowuj jeśli użytkownik już kliknął link
+  // (tu: zawsze przekierujemy po 700ms, żeby dać szansę kliknąć)
+  setTimeout(()=> { window.location.href = target; }, 700);
+
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
 
