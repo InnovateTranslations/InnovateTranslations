@@ -41,11 +41,22 @@ a{color:inherit}
   padding: 56px 0 24px;
 }
 
+/* Landing: blok wycentrowany, treść wyrównana do lewej */
 .hero-inner{
-  max-width: 1080px;   /* IDENTYCZNE jak .container */
+  max-width: 720px;     /* węższy blok = ładniejszy układ */
   margin: 0 auto;
-  padding: 0 24px;     /* IDENTYCZNE jak .container */
-  text-align: center;
+  padding: 0 24px;
+  text-align: left;     /* KLUCZ: lewa krawędź */
+}
+
+/* Przycisków nie centrujemy */
+.hero-inner .cta{
+  justify-content: flex-start;  /* zamiast center */
+}
+
+/* Opcjonalnie: żeby przyciski ładnie “siadały” pod tekstem */
+.hero-inner .cta .btn{
+  min-width: 120px;
 }
 
 .hero-inner h1{
