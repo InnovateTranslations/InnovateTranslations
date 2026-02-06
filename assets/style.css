@@ -129,4 +129,10 @@ a{color:inherit}
   margin-right: auto;
 }
 
-
+/* Landing – przyciski wyrównane do lewej krawędzi */
+.hero-inner .cta{
+  justify-content: flex-start !important;
+}
+.hero-inner .cta .btn:first-child{
+  margin-left: 0;
+}
