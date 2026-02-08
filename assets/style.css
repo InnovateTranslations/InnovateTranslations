@@ -169,3 +169,8 @@ a{color:inherit}
   text-align: center;
 }
 
+/* Landing – helper text nie szerszy niż opis */
+.hero-inner .small{
+  max-width: 520px;
+}
+
