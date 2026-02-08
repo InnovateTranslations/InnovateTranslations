@@ -171,6 +171,6 @@ a{color:inherit}
 
 /* Landing – helper text nie szerszy niż opis */
 .hero-inner .small{
-  max-width: 520px;
+  max-width: 480px;
 }
 
