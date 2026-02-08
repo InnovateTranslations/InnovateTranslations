@@ -64,7 +64,15 @@ a{color:inherit}
   margin-right: auto;
 }
 
+.hero-subline{
+  font-size: clamp(16px, 2vw, 18px);
+  color: var(--muted);
+  margin-top: 10px;
+}
 
+.hero-langs{
+  white-space: nowrap;  /* kluczowe */
+}
 
 .hero h1{font-size: clamp(28px, 4vw, 46px); line-height:1.15; margin:0 0 12px}
 .hero p{max-width:820px;color:var(--muted);margin:0 0 18px;font-size: clamp(16px, 2vw, 18px)}
