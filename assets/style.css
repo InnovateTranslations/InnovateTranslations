@@ -150,10 +150,19 @@ a{color:inherit}
   margin-left: 0;
 } */
 
-/* Landing – rozciągnięte przyciski */
+/* Landing – przyciski dopasowane do szerokości tekstu */
 .hero-inner .cta{
-  width: 100%;
+  width: max-content;      /* nie 100% */
+  max-width: 100%;
+  justify-content: flex-start;
 }
+
+.hero-inner .cta .btn{
+  flex: 1;
+  min-width: 140px;        /* kontrola minimalnej szerokości */
+  text-align: center;
+}
+
 
 .hero-inner .cta .btn{
   flex: 1;                 /* KAŻDY przycisk zajmuje tyle samo miejsca */
