@@ -141,11 +141,22 @@ a{color:inherit}
 
 /* Landing – przyciski wyrównane do lewej krawędzi */
 /* Landing: przyciski mają wyrównywać się do lewej krawędzi bloku */
-.hero-inner .cta{
+/*.hero-inner .cta{
   width: 100%;
   justify-content: flex-start !important;
 }
 
 .hero-inner .cta .btn:first-child{
   margin-left: 0;
+} */
+
+/* Landing – rozciągnięte przyciski */
+.hero-inner .cta{
+  width: 100%;
 }
+
+.hero-inner .cta .btn{
+  flex: 1;                 /* KAŻDY przycisk zajmuje tyle samo miejsca */
+  text-align: center;
+}
+
