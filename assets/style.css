@@ -246,3 +246,28 @@ h1, h2{
 .lang a:hover{
   border-color: var(--accent);
 }
+
+/* ===== Brand (logo + name) ===== */
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.brand img{
+  height: 28px;      /* desktop */
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 520px){
+  .brand{
+    justify-content: center;
+  }
+  .brand img{
+    height: 32px;   /* logo może być trochę większe na mobile */
+  }
+}
+
