@@ -174,3 +174,28 @@ a{color:inherit}
   max-width: 480px;
 }
 
+/* Mobile fix: nav układa się równo */
+@media (max-width: 520px){
+  .nav{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 18px; /* opcjonalnie, może wyglądać lepiej przy 2 liniach */
+  }
+  .brand{
+    width: 100%;
+    text-align: center;
+  }
+  .lang{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  .lang a{
+    flex: 1;            /* równe „kafelki” */
+    text-align: center;
+  }
+}
+
+
