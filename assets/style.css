@@ -174,7 +174,7 @@ a{color:inherit}
   max-width: 480px;
 }
 
-/* Mobile fix: nav układa się równo */
+/* Mobile fix: nav układa się równo w nagłówku */
 @media (max-width: 520px){
   .nav{
     flex-wrap: wrap;
