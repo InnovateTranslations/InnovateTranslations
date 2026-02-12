@@ -71,10 +71,7 @@ a{color:inherit}
 text-align: left;     
 }
 
-/* Przycisków nie centrujemy 
-.hero-inner .cta{
-  justify-content: flex-start;  /* zamiast center */
-} */
+
 
 /* Opcjonalnie: żeby przyciski ładnie “siadały” pod tekstem */
 .hero-inner .cta .btn{
@@ -118,8 +115,8 @@ text-align: left;
 /* Landing: węższa, wycentrowana kolumna hero */
 .hero .hero-inner{
   max-width: 840px;   /* możesz zmienić na 780 / 900 zależnie od gustu */
-  margin: 0 auto;
-  transform: translateX(60px);
+  margin: 0;
+  
 }
 
 
