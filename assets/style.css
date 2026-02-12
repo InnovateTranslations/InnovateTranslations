@@ -356,3 +356,14 @@ footer{
   opacity: .85;
   line-height: 1.6;
 }
+
+@media (max-width: 600px){
+  .footer-links{
+    line-height: 1.8;
+  }
+
+  .footer-company{
+    padding: 0 10px;
+  }
+}
+
