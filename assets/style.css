@@ -58,7 +58,7 @@ a{color:inherit}
 
 /* Landing: blok wycentrowany, treść wyrównana do lewej */
 .hero-inner{
-  max-width: 720px;     /* węższy blok = ładniejszy układ */
+  max-width: 1100px;     /* węższy blok = ładniejszy układ */
   margin: 0 auto;
   padding: 0 24px;
 /*  text-align: left; */    
