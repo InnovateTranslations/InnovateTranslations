@@ -101,7 +101,7 @@ text-align: left;
 
 /* Hero uses the same content axis as the rest of the page */
 .hero-wrap{
-  max-width: 820px;   /* dopasuj do tego, co masz w innych sekcjach */
+  max-width: 840px;   /* dopasuj do tego, co masz w innych sekcjach */
   margin: 0 auto;
   padding: 0 24px;
 }
