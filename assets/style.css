@@ -61,7 +61,7 @@ a{color:inherit}
   max-width: 720px;     /* węższy blok = ładniejszy układ */
   margin: 0 auto;
   padding: 0 24px;
-  text-align: left;     /* KLUCZ: lewa krawędź */
+/*  text-align: left; */    
 }
 
 /* Przycisków nie centrujemy 
