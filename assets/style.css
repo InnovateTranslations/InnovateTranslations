@@ -107,7 +107,17 @@ text-align: left;
 }
 
 
+
+/* Landing: center the hero block on the page */
+.landing-hero .hero-inner{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}
+
+
 
 
 /* ===== Buttons – black + gold (brand style) ===== */
