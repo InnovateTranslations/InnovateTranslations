@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://innovatetranslations.github.io/InnovateTranslations/sitemap.xml
+Sitemap: https://innovate-translations.eu/sitemap.xml
