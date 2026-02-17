@@ -38,9 +38,9 @@
   </p>
 
   <div class="cta" style="margin-top:28px">  
-    <a class="btn" href="/InnovateTranslations/pl/">Polski</a>
-    <a class="btn secondary" href="/InnovateTranslations/en/">English</a>
-    <a class="btn secondary" href="/InnovateTranslations/ru/">Русский</a>
+    <a class="btn" href="./pl/">Polski</a>
+    <a class="btn secondary" href="./en/">English</a>
+    <a class="btn secondary" href="./ru/">Русский</a>
   </div>                                    
 
   <p class="small" style="margin-top:22px; opacity:.7">
@@ -53,7 +53,7 @@
   </div>                                          
 
 <script>
-  const BASE = "/InnovateTranslations";
+  const BASE = "";
   const y = document.getElementById('y');
   if (y) y.textContent = new Date().getFullYear();
 
@@ -75,7 +75,8 @@
   }
 
   // zapamiętaj kliknięcie języka
-  document.querySelectorAll('a[href*="/InnovateTranslations/"]').forEach(a => {
+  document.querySelectorAll('a[href*="/pl/"], a[href*="/en/"], a[href*="/ru/"]').forEach(a => {
+
     a.addEventListener("click", () => {
       if (a.href.includes("/pl/")) localStorage.setItem("it_lang","pl");
       if (a.href.includes("/en/")) localStorage.setItem("it_lang","en");
@@ -92,11 +93,11 @@
   </div>
 
   <div class="footer-line footer-links">
-    <a href="/InnovateTranslations/pl/">PL</a> ·
-    <a href="/InnovateTranslations/en/">EN</a> ·
-    <a href="/InnovateTranslations/ru/">RU</a> ·
-    <a href="/InnovateTranslations/regulamin.html" target="_blank" rel="noopener">Regulamin</a> ·
-    <a href="/InnovateTranslations/polityka-prywatnosci.html" target="_blank" rel="noopener">Polityka prywatności</a> ·
+    <a href="./pl/">PL</a> ·
+    <a href="./en/">EN</a> ·
+    <a href="./ru/">RU</a> ·
+    <a href="./regulamin.html" target="_blank" rel="noopener">Regulamin</a> ·
+    <a href="./polityka-prywatnosci.html" target="_blank" rel="noopener">Polityka prywatności</a> ·
     <a href="#">O nas</a>
   </div>
 
