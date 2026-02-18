@@ -131,6 +131,26 @@
 <script>
   document.getElementById('y').textContent = new Date().getFullYear();
 </script>
+
+
+<script>
+  (function(){
+    const cb = document.getElementById('consentMailto');
+    const btn = document.getElementById('mailtoBtn');
+    if(!cb || !btn) return;
+
+    const setState = () => {
+      const ok = cb.checked;
+      btn.setAttribute('aria-disabled', ok ? 'false' : 'true');
+    };
+
+    cb.addEventListener('change', setState);
+    setState();
+  })();
+</script>
+
+
+  
 </body>
 
 <footer class="footer-clean">
