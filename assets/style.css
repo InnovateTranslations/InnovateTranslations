@@ -443,3 +443,32 @@ h2{
   letter-spacing: -0.01em;
 }
 
+
+/* mailto consent */
+.btn[aria-disabled="true"]{
+  opacity: .45;
+  pointer-events: none;
+  filter: grayscale(20%);
+}
+
+.consent-mailto{
+  font-size: 13px;
+  color: rgba(255,255,255,.65);
+  line-height: 1.5;
+}
+
+.consent-mailto a{
+  color: rgba(198,161,91,.95);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(198,161,91,.35);
+}
+
+.consent-mailto a:hover{
+  border-bottom-color: rgba(198,161,91,.75);
+}
+
+.consent-mailto input{
+  margin-top: 2px;
+  accent-color: rgba(198,161,91,.95);
+}
+
