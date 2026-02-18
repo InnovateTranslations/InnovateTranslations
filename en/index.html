@@ -105,10 +105,26 @@
       <div class="card" id="contact">
         <h2>Contact</h2>
         <p>Tell us what you need translated, the language pair, and deadline. We’ll reply with a quote.</p>
+        
         <div class="cta" style="margin-top:12px">
-          <a class="btn" href="mailto:ina.konstantinova@gmail.com?subject=Translation%20quote&body=Hello%2C%0A%0AI%27d%20like%20to%20request%20a%20quote%20for%3A%0A-%20Languages%3A%20PL%20%E2%86%92%20EN%20(or%20RU)%0A-%20Topic%3A%20%0A-%20Volume%3A%20%0A-%20Deadline%3A%20%0A%0AFile%20attached.%0A%0ABest%20regards%2C">Email us</a>
-          
-        </div>
+  <a class="btn" id="mailtoBtn"
+     aria-disabled="true"
+     href="mailto:ina.konstantinova@gmail.com?subject=Wycena%20t%C5%82umaczenia&body=Dzie%C5%84%20dobry%2C%0A%0AProsz%C4%99%20o%20wycen%C4%99%20t%C5%82umaczenia%3A%0A-%20J%C4%99zyki%3A%20PL%20%E2%86%92%20EN%20(ew.%20RU)%0A-%20Temat%3A%20%0A-%20Obj%C4%99to%C5%9B%C4%87%3A%20%0A-%20Termin%3A%20%0A%0AZa%C5%82%C4%85czam%20plik.%0A%0APozdrawiam%2C">
+    Napisz e-mail
+  </a>
+</div>
+
+<label class="consent-mailto" style="margin-top:12px; display:flex; gap:10px; align-items:flex-start;">
+  <input id="consentMailto" type="checkbox" />
+  <span>
+    By sending this email, I confirm that I have read and agree to the
+    <a href="terms.html">Terms and Conditions</a> oraz
+    <a href="privacy-policy.html">Privacy Policy</a>.
+  </span>
+</label>
+
+
+        
       </div>
     </section>
 
@@ -119,6 +135,24 @@
 <script>
   document.getElementById('y').textContent = new Date().getFullYear();
 </script>
+
+<script>
+  (function(){
+    const cb = document.getElementById('consentMailto');
+    const btn = document.getElementById('mailtoBtn');
+    if(!cb || !btn) return;
+
+    const setState = () => {
+      const ok = cb.checked;
+      btn.setAttribute('aria-disabled', ok ? 'false' : 'true');
+    };
+
+    cb.addEventListener('change', setState);
+    setState();
+  })();
+</script>
+
+  
 </body>
 
 <footer class="footer-clean">
@@ -130,8 +164,8 @@
   <div class="footer-line footer-links">
     <a href="../pl/">PL</a> ·
     <a href="../ru/">RU</a> ·
-   <a href="../regulamin.html">Regulamin</a> ·
-    <a href="../polityka-prywatnosci.html">Polityka prywatności</a> ·
+   <a href="terms.html">Terms and Conditions</a> ·
+    <a href="privacy-policy.html">Privacy Policy</a> ·
     <a href="#">O nas</a>
   </div>
 
