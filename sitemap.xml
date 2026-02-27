@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://innovate-translations.eu/</loc>
-  </url>
-  <url>
-    <loc>https://innovate-translations.eu/pl/</loc>
-  </url>
-  <url>
-    <loc>https://innovate-translations.eu/en/</loc>
-  </url>
-  <url>
-    <loc>https://innovate-translations.eu/ru/</loc>
-  </url>
+  <url><loc>https://innovate-translations.eu/</loc></url>
+  <url><loc>https://innovate-translations.eu/pl/index.html</loc></url>
+  <url><loc>https://innovate-translations.eu/en/index.html</loc></url>
+  <url><loc>https://innovate-translations.eu/ru/index.html</loc></url>
+
+  <!-- jeśli te strony istnieją w wersjach językowych -->
+  <url><loc>https://innovate-translations.eu/pl/polityka-prywatnosci.html</loc></url>
+  <url><loc>https://innovate-translations.eu/pl/regulamin.html</loc></url>
+  <url><loc>https://innovate-translations.eu/en/privacy-policy.html</loc></url>
+  <url><loc>https://innovate-translations.eu/en/terms.html</loc></url>
+  <url><loc>https://innovate-translations.eu/ru/politika-konfidencialnosti.html</loc></url>
+  <url><loc>https://innovate-translations.eu/ru/usloviya.html</loc></url>
 </urlset>
